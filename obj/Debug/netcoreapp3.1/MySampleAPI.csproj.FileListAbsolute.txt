@@ -23,3 +23,5 @@ C:\Users\vr185113\MySampleAPI\obj\Debug\netcoreapp3.1\staticwebassets\MySampleAP
 C:\Users\vr185113\MySampleAPI\obj\Debug\netcoreapp3.1\staticwebassets\MySampleAPI.StaticWebAssets.xml
 C:\Users\vr185113\MySampleAPI\obj\Debug\netcoreapp3.1\MySampleAPI.dll
 C:\Users\vr185113\MySampleAPI\obj\Debug\netcoreapp3.1\MySampleAPI.pdb
+C:\Users\vr185113\MySampleAPI\obj\Debug\netcoreapp3.1\MySampleAPI.csproj.CoreCompileInputs.cache
+C:\Users\vr185113\MySampleAPI\obj\Debug\netcoreapp3.1\MySampleAPI.genruntimeconfig.cache
