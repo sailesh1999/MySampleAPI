@@ -13,9 +13,13 @@
         "packagesPath": "C:\\Users\\vr185113\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\vr185113\\MySampleAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\vr185113\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -38,9 +42,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[15.0.4, )"
+            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.10.2, )"
+            },
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.3.9, )"
             }
           },
           "imports": [

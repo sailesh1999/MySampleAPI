@@ -13,7 +13,10 @@ using Microsoft.Extensions.Logging;
 
 using BooksApi.Models;
 using BooksApi.Services;
+using EventsApi.Models;
+using EventsApi.Services;
 using Microsoft.Extensions.Options;
+using MongoDB.Driver;
 
 namespace MySampleAPI
 {
@@ -40,8 +43,24 @@ namespace MySampleAPI
     services.AddSingleton<IBookstoreDatabaseSettings>(sp =>
         sp.GetRequiredService<IOptions<BookstoreDatabaseSettings>>().Value);
 
+            // requires using Microsoft.Extensions.Options
+    services.Configure<EventsDatabaseSettings>(
+        Configuration.GetSection(nameof(EventsDatabaseSettings)));
+
+    services.AddSingleton<IEventsDatabaseSettings>(sp =>
+        sp.GetRequiredService<IOptions<EventsDatabaseSettings>>().Value);
+
             services.AddSingleton<BookService>();
 
+            services.AddSingleton<VolunteerService>();
+
+            services.AddSingleton<UserService>();
+
+            services.AddSingleton<IMongoClient>(
+                new MongoClient(
+                    Configuration.GetSection("EventsDatabaseSettings")
+                    .GetValue<string>("ConnectionString")
+                    ));
 
             services.AddControllers();
         }
@@ -56,7 +75,7 @@ namespace MySampleAPI
 
 
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
 

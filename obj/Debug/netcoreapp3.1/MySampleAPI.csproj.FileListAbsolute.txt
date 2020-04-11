@@ -25,3 +25,5 @@ C:\Users\vr185113\MySampleAPI\obj\Debug\netcoreapp3.1\MySampleAPI.dll
 C:\Users\vr185113\MySampleAPI\obj\Debug\netcoreapp3.1\MySampleAPI.pdb
 C:\Users\vr185113\MySampleAPI\obj\Debug\netcoreapp3.1\MySampleAPI.csproj.CoreCompileInputs.cache
 C:\Users\vr185113\MySampleAPI\obj\Debug\netcoreapp3.1\MySampleAPI.genruntimeconfig.cache
+C:\Users\vr185113\MySampleAPI\bin\Debug\netcoreapp3.1\QRCoder.dll
+C:\Users\vr185113\MySampleAPI\bin\Debug\netcoreapp3.1\CsvHelper.dll
